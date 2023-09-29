@@ -1,0 +1,99 @@
+  [class*="-book"] {
+    font-weight: 800;
+  }
+  
+  [class*="-bold"] {
+    font-weight: 700;
+  }
+  
+  [class*="-semibold"] {
+    font-weight: 600;
+  }
+  
+  [class*="-medium"] {
+    font-weight: 500;
+  }
+  
+  [class*="-regular"] {
+    font-weight: 400;
+  }
+  
+  [class*="-light"] {
+    font-weight: 300;
+  }
+
+  .capitalize {
+    text-transform: capitalize;
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .lowercase {
+    text-transform: lowercase;
+  }
+  
+  /* titulos */
+  [class*="font-48"] {
+    font-size: 48px;
+  }
+
+  [class*="font-24"] {
+    font-size: 24px;
+  }
+
+  [class*="font-20"] {
+    font-size: 20px;
+  }
+
+  [class*="font-16"] {
+    font-size: 16px;
+  }
+
+  [class*="font-14"] {
+    font-size: 14px;
+  }
+
+  [class*="font-12"] {
+    font-size: 12px;
+  }
+
+  @media only screen and (max-width: 1600px) {
+    
+  }
+  
+  @media only screen and (max-width: 1400px) {
+    
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    
+  }
+  
+  @media only screen and (max-width: 900px) {
+    
+  }
+  
+  @media only screen and (max-width: 768px) {
+    [class*="font-14"] {
+        font-size: 12px;
+      }
+    
+  }
+  
+  @media only screen and (max-width: 600px) {
+    
+  }
+  
+  @media only screen and (max-width: 500px) {
+    
+  }
+  
+  @media only screen and (max-width: 420px) {
+    
+  }

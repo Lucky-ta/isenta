@@ -1,0 +1,299 @@
+/* SEÇAO SOBRE */
+.sobre {
+  width: 100%;
+  background-color: #ffbe7b;
+  margin-top: 300px;
+  position: relative;
+  z-index: 22;
+}
+
+.sobre::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 62%;
+  height: 100%;
+  background-color: #ffaf5d;
+  z-index: 22;
+}
+
+.sobre .container {
+  height: 100%;
+  display: flex;
+  position: relative;
+  z-index: 23;
+}
+
+.sobre .left-image {
+  width: 100%;
+  max-width: 607px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  margin-top: -230px;
+  object-position: left;
+}
+
+.sobre .text {
+  width: 100%;
+  max-width: 37.5vw;
+  padding: 104px 0 113px;
+  margin-left: 100px;
+}
+
+.sobre .text .logo {
+  width: 100%;
+  max-width: 10.94vw;
+  min-width: 160px;
+}
+
+.sobre .text p {
+  margin-top: 30px;
+}
+
+/* SEÇAO SAIBA MAIS */
+.saiba-mais {
+  width: 100%;
+  padding: clamp(30px, 5.21vw, 100px) 0 ;
+}
+
+.saiba-mais h2 {
+  width: fit-content;
+  margin: 0 auto  clamp(30px, 5.21vw, 100px);
+  text-align: center;
+}
+
+.saiba-mais .flex-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.saiba-mais .flex-box .card + .card, .saiba-mais .flex-box .card + .card.invert {
+  margin-top: clamp(48px, 5.21vw, 100px);
+}
+
+.saiba-mais .flex-box .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.saiba-mais .flex-box .card.invert {
+  flex-direction: row-reverse;
+}
+
+.saiba-mais .flex-box .card img {
+  width: 100%;
+  max-width: clamp(320px, 27.92vw, 536px);
+  border-radius: clamp(20px,1.67vw, 32px);
+}
+
+.saiba-mais .flex-box .card .text {
+  width: 100%;
+    max-width: 720px;
+}
+
+.saiba-mais .flex-box .card .text p {
+  margin: clamp(20px,1.56vw, 30px) 0;
+}
+
+.saiba-mais .flex-box .card .text button {
+  width: 100%;
+  max-width: 136px;
+  padding: 0;
+  background: none;
+  border: 0;
+  background-color: var(--primaryColor);
+  color: #fff;
+  height: 32px;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .sobre .left-image {
+    max-width: 500px;
+    margin-top: -196px;
+  }
+
+  .sobre .text {
+    padding: 80px 0;
+    margin-left: 85px;
+  }
+
+  .sobre .text p {
+    margin-top: 26px;
+  }
+
+
+}
+
+@media only screen and (max-width: 1400px) {
+  .sobre .left-image {
+    max-width: 465px;
+    margin-top: -175px;
+  }
+
+  .sobre .text {
+    padding: 65px 0;
+    margin-left: 55px;
+  }
+
+  .sobre .text p {
+    margin-top: 24px;
+  }
+
+  /* SEÇAO SAIBA MAIS */
+.saiba-mais .flex-box .card .text {
+      max-width: 520px;
+  }
+  
+}
+
+@media only screen and (max-width: 1240px) {
+  .sobre .text {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .sobre .left-image {
+    max-width: 415px;
+    margin-top: -125px;
+  }
+
+  .sobre .text {
+    padding: 50px 0;
+    margin-left: 30px;
+  }
+
+  .sobre .text p {
+    margin-top: 22px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .sobre .left-image {
+    max-width: 348px;
+    margin-top: -68px;
+  }
+
+  .sobre .text {
+    padding: 30px 0;
+    margin-left: 30px;
+  }
+
+  .sobre .text p {
+    margin-top: 20px;
+  }
+
+    /* SEÇAO SAIBA MAIS */
+.saiba-mais .flex-box .card .text {
+    max-width: 420px;
+}
+}
+
+@media only screen and (max-width: 900px) {
+  .sobre .container {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+  }
+
+  .sobre::after {
+    display: none;
+  }
+
+  .sobre .left-image {
+    max-width: 415px;
+    margin: -155px auto 0;
+    object-position: initial;
+  }
+
+  .sobre .text {
+    padding: 50px 15px;
+    margin-left: 0;
+    background-color: #ffaf5d;
+  }
+
+  .sobre .text p {
+    max-width: 90%;
+  }
+
+  .sobre .text p {
+    margin-top: 22px;
+  }
+
+      /* SEÇAO SAIBA MAIS */
+.saiba-mais .flex-box .card, .saiba-mais .flex-box .card.invert {
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.saiba-mais .flex-box .card .text {
+    max-width: 100%;
+}
+
+.saiba-mais .flex-box .card h3{
+    margin-top: 16px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .sobre .left-image {
+    max-width: 380px;
+  }
+
+  .sobre .text {
+    padding: 40px 15px;
+  }
+
+  .sobre .text p {
+    max-width: 100%;
+  }
+
+  .sobre .text p {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+      /* SEÇAO SAIBA MAIS */
+      .saiba-mais .flex-box .card, .saiba-mais .flex-box .card.invert {
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+  }
+
+@media only screen and (max-width: 540px) {
+  .sobre .left-image {
+    max-width: 340px;
+    margin: -145px auto 0;
+  }
+
+  .sobre .text {
+    padding: 30px 15px;
+  }
+
+  .sobre .text p {
+    max-width: 100%;
+  }
+
+  .sobre .text p {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .sobre .left-image {
+    max-width: 300px;
+    margin: -125px auto 0;
+  }
+}
