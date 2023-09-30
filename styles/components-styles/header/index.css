@@ -2,6 +2,8 @@ header {
     width: 100%;
     padding: 32px 0;
     border-bottom: 1px solid #E3E8F6;
+    position: relative;
+    z-index: 44;
 }
 
 header .container {
@@ -11,7 +13,7 @@ header .container {
 
 img {
     width: 100%;
-   max-width: 126px;
+    max-width: 126px;
 }
 
 nav {
@@ -28,7 +30,7 @@ a:hover {
 }
 
 
-a + a {
+a+a {
     margin-left: 56px;
 }
 
@@ -37,6 +39,8 @@ footer {
     width: 100%;
     padding: 16px 0;
     background-color: var(--primaryColor);
+    position: relative;
+    z-index: 22;
 }
 
 
@@ -58,7 +62,7 @@ footer p {
         margin-left: 70px;
     }
 
-    a + a {
+    a+a {
         margin-left: 54px;
     }
 }
@@ -72,7 +76,7 @@ footer p {
         margin-left: 64px;
     }
 
-    a + a {
+    a+a {
         margin-left: 50px;
     }
 }
@@ -86,7 +90,7 @@ footer p {
         margin-left: 60px;
     }
 
-    a + a {
+    a+a {
         margin-left: 46px;
     }
 }
@@ -100,7 +104,7 @@ footer p {
         margin-left: 56px;
     }
 
-    a + a {
+    a+a {
         margin-left: 44px;
     }
 }
@@ -111,10 +115,10 @@ footer p {
     }
 
     img {
-       max-width: 115px;
+        max-width: 115px;
     }
 
-    a + a {
+    a+a {
         margin-left: 30px;
     }
 }
@@ -122,14 +126,14 @@ footer p {
 
 @media only screen and (max-width: 420px) {
     nav {
-        margin-left:6vw;
+        margin-left: 6vw;
     }
 
     img {
-       max-width: 100px;
+        max-width: 100px;
     }
 
-    a + a {
+    a+a {
         margin-left: 1.56vw;
     }
 }

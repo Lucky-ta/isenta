@@ -1,23 +1,23 @@
   [class*="-book"] {
     font-weight: 800;
   }
-  
+
   [class*="-bold"] {
     font-weight: 700;
   }
-  
+
   [class*="-semibold"] {
     font-weight: 600;
   }
-  
+
   [class*="-medium"] {
     font-weight: 500;
   }
-  
+
   [class*="-regular"] {
     font-weight: 400;
   }
-  
+
   [class*="-light"] {
     font-weight: 300;
   }
@@ -25,15 +25,15 @@
   .capitalize {
     text-transform: capitalize;
   }
-  
+
   .uppercase {
     text-transform: uppercase;
   }
-  
+
   .lowercase {
     text-transform: lowercase;
   }
-  
+
   /* titulos */
   [class*="font-48"] {
     font-size: 48px;
@@ -60,40 +60,81 @@
   }
 
   @media only screen and (max-width: 1600px) {
-    
+    [class*="font-48"] {
+      font-size: 44px;
+    }
+
+    [class*="font-16"] {
+      font-size: 15px;
+    }
+
+    [class*="font-24"] {
+      font-size: 22px;
+    }
   }
-  
+
   @media only screen and (max-width: 1400px) {
-    
+    [class*="font-48"] {
+      font-size: 40px;
+    }
+
+
+    [class*="font-24"] {
+      font-size: 20px;
+    }
   }
-  
+
   @media only screen and (max-width: 1200px) {
-    
+    [class*="font-48"] {
+      font-size: 36px;
+    }
   }
-  
+
   @media only screen and (max-width: 1024px) {
-    
+    [class*="font-48"] {
+      font-size: 34px;
+    }
+
+    [class*="font-16"] {
+      font-size: 14px;
+    }
+
+    [class*="font-24"] {
+      font-size: 18px;
+    }
   }
-  
-  @media only screen and (max-width: 900px) {
-    
-  }
-  
+
+  @media only screen and (max-width: 900px) {}
+
   @media only screen and (max-width: 768px) {
     [class*="font-14"] {
-        font-size: 12px;
-      }
-    
+      font-size: 12px;
+    }
+
+    [class*="font-48"] {
+      font-size: 30px;
+    }
+
+    [class*="font-16"] {
+      font-size: 13px;
+    }
+
   }
-  
-  @media only screen and (max-width: 600px) {
-    
-  }
-  
-  @media only screen and (max-width: 500px) {
-    
-  }
-  
+
+  @media only screen and (max-width: 600px) {}
+
+  @media only screen and (max-width: 500px) {}
+
   @media only screen and (max-width: 420px) {
-    
+    [class*="font-48"] {
+      font-size: 24px;
+    }
+
+    [class*="font-24"] {
+      font-size: 16px;
+    }
+
+    [class*="font-16"] {
+      font-size: 12px;
+    }
   }

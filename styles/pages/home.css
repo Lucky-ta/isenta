@@ -1,8 +1,23 @@
+button {
+  width: 100%;
+  max-width: 136px;
+  padding: 0;
+  background: none;
+  border: 0;
+  background-color: var(--primaryColor);
+  color: #fff;
+  height: 32px;
+  border-radius: 8px;
+}
+
+textarea {
+  resize: none !important;
+}
+
 /* SEÇAO SOBRE */
 .sobre {
   width: 100%;
   background-color: #ffbe7b;
-  margin-top: 300px;
   position: relative;
   z-index: 22;
 }
@@ -54,12 +69,13 @@
 /* SEÇAO SAIBA MAIS */
 .saiba-mais {
   width: 100%;
-  padding: clamp(30px, 5.21vw, 100px) 0 ;
+  padding: clamp(30px, 5.21vw, 100px) 0;
+  background-color: #fff;
 }
 
 .saiba-mais h2 {
   width: fit-content;
-  margin: 0 auto  clamp(30px, 5.21vw, 100px);
+  margin: 0 auto clamp(30px, 5.21vw, 100px);
   text-align: center;
 }
 
@@ -68,7 +84,8 @@
   flex-direction: column;
 }
 
-.saiba-mais .flex-box .card + .card, .saiba-mais .flex-box .card + .card.invert {
+.saiba-mais .flex-box .card+.card,
+.saiba-mais .flex-box .card+.card.invert {
   margin-top: clamp(48px, 5.21vw, 100px);
 }
 
@@ -85,29 +102,352 @@
 .saiba-mais .flex-box .card img {
   width: 100%;
   max-width: clamp(320px, 27.92vw, 536px);
-  border-radius: clamp(20px,1.67vw, 32px);
+  border-radius: clamp(20px, 1.67vw, 32px);
 }
 
 .saiba-mais .flex-box .card .text {
   width: 100%;
-    max-width: 720px;
+  max-width: 720px;
 }
 
 .saiba-mais .flex-box .card .text p {
-  margin: clamp(20px,1.56vw, 30px) 0;
+  margin: clamp(20px, 1.56vw, 30px) 0;
 }
 
-.saiba-mais .flex-box .card .text button {
+/* SEÇAO BANNER */
+.banner {
   width: 100%;
-  max-width: 136px;
-  padding: 0;
-  background: none;
-  border: 0;
-  background-color: var(--primaryColor);
-  color: #fff;
-  height: 32px;
-  border-radius: 8px;
+  min-height: calc(100vh - 89px);
+  position: relative;
+  z-index: 22;
 }
+
+.banner .bg {
+  position: absolute;
+  width: 100%;
+  max-width: 56.77vw;
+  min-width: 300px;
+  max-height: 100vh;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  object-fit: contain;
+  z-index: 22;
+}
+
+.banner .container {
+  position: relative;
+  z-index: 23;
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner .content {
+  max-width: 27.97vw;
+  min-width: 300px;
+  padding-bottom: 80px;
+}
+
+.banner .content .logo {
+  width: 100%;
+  max-width: 167px;
+  object-fit: contain;
+}
+
+.banner .content h1 {
+  margin: clamp(30px, 3.33vw, 64px) 0 clamp(20px, 1.25vw, 24px);
+}
+
+.banner .content h1 span {
+  color: var(--primaryColor);
+}
+
+.banner .content p {
+  margin-bottom: clamp(20px, 1.56vw, 30px);
+}
+
+.banner .chat {
+  width: 100%;
+  max-width: 37.50vw;
+  min-width: 334px;
+  border-radius: 16px;
+  background-color: #fff;
+  padding-bottom: 16px;
+}
+
+.banner .chat .header {
+  width: 100%;
+  padding: clamp(16px, 1.04vw, 20px) clamp(18px, 1.56vw, 30px);
+  color: #3F4759;
+  border-bottom: 1px solid #E3E8F6;
+}
+
+.banner .chat .message-box {
+  width: 100%;
+  max-width: 96%;
+  background-color: #f1f3f5;
+  position: relative;
+  z-index: 22;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 6px;
+  margin: 40px auto 0;
+}
+
+.banner .chat .message-box textarea {
+  width: 100%;
+  background-color: #f1f3f5;
+  height: 100%;
+  border: 0;
+  padding: 8px 0 0 16px;
+
+}
+
+.banner .chat .message-box .icons-box {
+  position: absolute;
+  z-index: 22;
+  max-width: fit-content;
+  bottom: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.banner .chat .message-box .icons-box button {
+  width: 100%;
+  min-width: 88px;
+}
+
+.banner .chat .flex-box {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 0.83vw, 16px);
+  padding: clamp(10px, 0.83vw, 16px) clamp(18px, 1.56vw, 30px) 0;
+}
+
+.banner .chat .flex-box .message {
+  width: fit-content;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.banner .chat .flex-box .message p {
+  color: #4F2500 !important;
+}
+
+.banner .chat .flex-box .message .image {
+  width: 32px;
+  height: 32px;
+  aspect-ratio: 32/32;
+  border-radius: 100rem;
+  background-color: #ffaf5d;
+}
+
+.banner .chat .flex-box .message .text {
+  background-color: #FFDDB2;
+  padding: clamp(10px, 0.83vw, 16px);
+  border-radius: 8px;
+  max-width: 424px;
+}
+
+.banner .chat .flex-box .message.gray {
+  flex-direction: row-reverse;
+  margin: 0 0 auto auto
+}
+
+.banner .chat .flex-box .message.gray p {
+  color: #565E71 !important;
+}
+
+.banner .chat .flex-box .message.gray .image {
+  background-color: #C8D6FF;
+}
+
+.banner .chat .flex-box .message.gray .text {
+  background-color: #e3e8f6;
+}
+
+.banner .chat .flex-box .message .text .value {
+  display: block;
+  margin: 8px 0 12px;
+}
+
+
+.banner .chat .flex-box .message .text input {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+}
+
+.banner .chat .flex-box .message .text .input-box {
+  border-radius: 100rem;
+  height: 32px;
+  width: 18.75vw;
+  min-width: 224px;
+  overflow: hidden;
+  position: relative;
+  z-index: 22;
+}
+
+.banner .chat .flex-box .message .text .input-box .icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+}
+
+
+
+/* CONTATO */
+.contact {
+  width: 100%;
+  padding: 40px 0 0;
+
+}
+
+.contact .container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 22;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact .container .woman {
+  width: 100%;
+  max-width: 24.58vw;
+  min-width: 250px;
+  object-fit: contain;
+  bottom: -50px;
+  position: relative;
+  z-index: 21;
+  right: -4vw;
+}
+
+.contact .content {
+  width: 100%;
+}
+
+
+.contact .content .text {
+  width: 100%;
+  max-width: 322px;
+
+}
+
+.contact .content .text .logo {
+  width: 100%;
+  max-width: 8.70vw;
+  min-width: 128px;
+  object-fit: contain;
+}
+
+.contact .content .text h3 {
+  margin-top: 96px;
+
+}
+
+.contact .content .text p {
+  margin: 20px 0 32px;
+}
+
+.contact .content form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.contact .content form .row {
+  display: flex;
+  gap: 16px;
+}
+
+.contact .content form .row .column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+
+}
+
+.contact .content form .row .column .input-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start !important;
+}
+
+.contact .content form .row .column .input-box * {
+  width: 100%;
+}
+
+.contact .content form .row .column .input-box div {
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+.contact .content form .row .column .input-box div .left {
+  height: 100%;
+  width: 64px !important;
+  border: 0;
+  background-color: #F5F7FD;
+  border: 1px solid #E3E8F6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: -4px;
+  border-radius: 4px;
+}
+
+.contact .content form .row .column .input-box div img {
+  object-fit: contain;
+  width: 24px;
+  height: 16px;
+  margin-left: 6px;
+}
+
+.contact .content form .row .column label {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.contact .content form .row .column input,
+.contact .content form .row .column textarea {
+  display: block;
+  border: 1px solid #E3E8F6;
+  height: 32px;
+  border-radius: 4px;
+  width: 100%;
+  padding-left: 8px;
+}
+
+.contact .content form .row .column input {
+  height: 32px;
+}
+
+.contact .content form .row .column textarea {
+  height: 120px;
+  width: 100%;
+  width: 37.50vw;
+  padding-top: 8px;
+
+}
+
+.contact .content form button {
+  max-width: 168px;
+  margin: 16px 0 auto auto;
+}
+
+
 
 @media only screen and (max-width: 1600px) {
   .sobre .left-image {
@@ -123,8 +463,6 @@
   .sobre .text p {
     margin-top: 26px;
   }
-
-
 }
 
 @media only screen and (max-width: 1400px) {
@@ -143,10 +481,9 @@
   }
 
   /* SEÇAO SAIBA MAIS */
-.saiba-mais .flex-box .card .text {
-      max-width: 520px;
+  .saiba-mais .flex-box .card .text {
+    max-width: 520px;
   }
-  
 }
 
 @media only screen and (max-width: 1240px) {
@@ -186,10 +523,10 @@
     margin-top: 20px;
   }
 
-    /* SEÇAO SAIBA MAIS */
-.saiba-mais .flex-box .card .text {
+  /* SEÇAO SAIBA MAIS */
+  .saiba-mais .flex-box .card .text {
     max-width: 420px;
-}
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -224,22 +561,26 @@
     margin-top: 22px;
   }
 
-      /* SEÇAO SAIBA MAIS */
-.saiba-mais .flex-box .card, .saiba-mais .flex-box .card.invert {
+  /* SEÇAO SAIBA MAIS */
+  .saiba-mais .flex-box .card,
+  .saiba-mais .flex-box .card.invert {
     flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-}
+  }
 
-
-.saiba-mais .flex-box .card .text {
+  .saiba-mais .flex-box .card .text {
     max-width: 100%;
-}
+  }
 
-.saiba-mais .flex-box .card h3{
+  .saiba-mais .flex-box .card h3 {
     margin-top: 16px;
-}
+  }
+
+  .banner {
+    margin-bottom: 100px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -258,19 +599,87 @@
   .sobre .text p {
     margin-top: 20px;
   }
+
+  .banner {
+    margin-bottom: 180px;
+    min-height: calc(100vh - 67px) !important;
+  }
+
+
+  .banner .bg {
+    bottom: unset;
+    top: 0;
+  }
+
+  .banner .container {
+    flex-direction: column;
+    padding: 32px 0;
+  }
+
+  .banner .container .logo {
+    display: none;
+  }
+
+  .banner .container h1 {
+    margin-top: 0;
+  }
+
+
+  .banner .content {
+    padding-bottom: 32px;
+  }
+
+  .contact {
+    padding: 47px 0;
+  }
+
+  .contact .content h3 {
+    margin: 40px 0 16px !important;
+  }
+
+  .contact .container {
+    flex-direction: column;
+  }
+
+  .contact form {
+    padding-bottom: 0 !important;
+  }
+
+  .contact form .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .contact form .column .left {
+    height: 32px !important;
+  }
+
+  .contact form .column input,
+  textarea {
+    width: 100% !important;
+  }
+
+  .contact .container .woman {
+    max-width: 30vw;
+    min-width: 160px;
+    position: initial;
+    margin: 30px 0 -90px;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
 
-      /* SEÇAO SAIBA MAIS */
-      .saiba-mais .flex-box .card, .saiba-mais .flex-box .card.invert {
-        text-align: start;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
+  /* SEÇAO SAIBA MAIS */
+  .saiba-mais .flex-box .card,
+  .saiba-mais .flex-box .card.invert {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
+}
 
 @media only screen and (max-width: 540px) {
   .sobre .left-image {
@@ -296,4 +705,14 @@
     max-width: 300px;
     margin: -125px auto 0;
   }
+
+  .banner .chat {
+    min-width: 300px;
+  }
+
+
+  .contact form button {
+    max-width: 100% !important;
+  }
+
 }
