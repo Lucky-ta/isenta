@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -78,43 +79,53 @@ abbr[data-original-title] {
   cursor: help;
   border-bottom: 0;
 }
+
 address {
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit;
 }
+
 ol,
 ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
 ol ol,
 ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0;
 }
+
 dt {
   font-weight: bold;
 }
+
 dd {
   margin-bottom: 0.5rem;
   margin-left: 0;
 }
+
 blockquote {
   margin: 0 0 1rem;
 }
+
 dfn {
   font-style: italic;
 }
+
 b,
 strong {
   font-weight: bolder;
 }
+
 small {
   font-size: 80%;
 }
+
 sub,
 sup {
   position: relative;
@@ -122,9 +133,11 @@ sup {
   line-height: 0;
   vertical-align: baseline;
 }
+
 sub {
   bottom: -0.25em;
 }
+
 sup {
   top: -0.5em;
 }
@@ -135,6 +148,7 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
+
 a:hover {
   color: #0056b3;
   text-decoration: underline;
@@ -143,10 +157,12 @@ a:hover {
 a:not([href]):not([tabindex]) {
   text-decoration: none;
 }
+
 a:not([href]):not([tabindex]):focus,
 a:not([href]):not([tabindex]):hover {
   text-decoration: none;
 }
+
 a:not([href]):not([tabindex]):focus {
   outline: 0;
 }
@@ -158,6 +174,7 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
+
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -173,6 +190,7 @@ img {
   vertical-align: middle;
   border-style: none;
 }
+
 svg:not(:root) {
   overflow: hidden;
 }
@@ -193,6 +211,7 @@ textarea {
 table {
   border-collapse: collapse;
 }
+
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -200,6 +219,7 @@ caption {
   text-align: left;
   caption-side: bottom;
 }
+
 th {
   text-align: inherit;
 }
@@ -217,6 +237,7 @@ button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
+
 input,
 button,
 select,
@@ -227,10 +248,12 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
+
 button,
 input {
   overflow: visible;
 }
+
 button,
 select {
   text-transform: none;
@@ -250,21 +273,25 @@ button::-moz-focus-inner,
   padding: 0;
   border-style: none;
 }
+
 input[type='radio'],
 input[type='checkbox'] {
   box-sizing: border-box;
   padding: 0;
 }
+
 input[type='date'],
 input[type='time'],
 input[type='datetime-local'],
 input[type='month'] {
   -webkit-appearance: listbox;
 }
+
 textarea {
   overflow: auto;
   resize: vertical;
 }
+
 fieldset {
   min-width: 0;
   padding: 0;
@@ -283,6 +310,7 @@ legend {
   color: inherit;
   white-space: normal;
 }
+
 progress {
   vertical-align: baseline;
 }
@@ -291,6 +319,7 @@ progress {
 [type='number']::-webkit-outer-spin-button {
   height: auto;
 }
+
 [type='search'] {
   outline-offset: -2px;
   -webkit-appearance: none;
@@ -309,9 +338,11 @@ progress {
 output {
   display: inline-block;
 }
+
 summary {
   display: list-item;
 }
+
 template {
   display: none;
 }
@@ -324,6 +355,7 @@ template {
   0% {
     background-position: 0px 0;
   }
+
   100% {
     background-position: 100vw 0;
   }

@@ -1,0 +1,103 @@
+.section-blog .container {
+    position: relative;
+    z-index: 22;
+}
+
+.section-blog .container .bg {
+    position: absolute;
+    z-index: 21;
+    width: 100%;
+    max-width: 100%;
+    top: calc(10px + 89px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blog {
+    width: 100%;
+    padding: clamp(30px, 5.00vw, 96px) 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 22;
+    padding-top: clamp(calc(30px + 15px), 4.64vw, 98px);
+}
+
+.blog h1 {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto clamp(30px, 5.42vw, 104px);
+}
+
+
+.blog .blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(48px, 1.56vw, 30px);
+}
+
+.blog .blog-list .card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.blog .blog-list .card img {
+    width: 100%;
+    max-width: 18.33vw;
+    min-width: 260px;
+    aspect-ratio: 352/240;
+    border-radius: 8px;
+    overflow: hidden;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.blog .blog-list .card img:hover {
+    transform: scale(1.1);
+}
+
+.blog .blog-list .card .text {
+    width: 100%;
+    max-width: 720px;
+}
+
+.blog .blog-list .card .text a {
+    max-width: fit-content;
+    display: block;
+}
+
+
+.blog .blog-list .card .text h3 {
+    width: 100%;
+    max-width: fit-content;
+    color: #283041;
+}
+
+.blog .blog-list .card .text p {
+    margin: clamp(16px, 1.04vw, 20px) 0;
+}
+
+.blog .blog-list .card .text p span {
+    color: #FF8E1B;
+}
+
+.blog .ver-mais {
+    width: 100%;
+    max-width: 352px;
+    margin: clamp(48px, 4.17vw, 80px) auto 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .blog .blog-list .card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}

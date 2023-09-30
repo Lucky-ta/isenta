@@ -1,0 +1,107 @@
+.post.container {
+    padding: clamp(calc(32px + 89px), 2.08vw, 40px) 0 clamp(32px, 3.13vw, 60px);
+    max-width: 56.67vw;
+}
+
+.post.container .back {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: clamp(18px, 1.56vw, 30px);
+    width: fit-content;
+}
+
+.post.container .back svg {
+    width: 16px;
+    height: 16px;
+}
+
+.post.container .back span {
+    display: block;
+    color: var(--primaryColor);
+}
+
+.post {
+    width: 100%;
+}
+
+.post h1 {
+    width: fit-content;
+    margin-bottom: clamp(16px, 1.56vw, 30px);
+    ;
+}
+
+.post .image-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.post .image-box img {
+    width: 100%;
+    max-width: 1088px;
+    aspect-ratio: 1088/472;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.post .image-box span {
+    margin-top: 16px;
+    color: #A6AFC7;
+}
+
+.post .text {
+    margin-top: clamp(16px, 1.56vw, 30px);
+}
+
+.post .text h2 {
+    margin-bottom: 16px;
+    color: #283041;
+}
+
+.post .text .description {
+    color: #565E71 !important;
+}
+
+.post .text .description p+img {
+    margin-top: clamp(30px, 2.50vw, 48px);
+}
+
+.post .text .description p+* {
+    margin-top: 16px;
+}
+
+.post .text .description span {
+    display: block;
+    margin: 16px 0 clamp(20px, 1.56vw, 30px);
+}
+
+.post .text .description img {
+    width: 100%;
+    max-width: 1088px;
+    aspect-ratio: 1088/472;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .post.container {
+        max-width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 650px) {
+    .post.container {
+        max-width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .post.container {
+        max-width: 92vw;
+    }
+}
+
+@media only screen and (max-width: 420px) {}

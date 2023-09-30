@@ -3,6 +3,35 @@
   --secondaryColor: #565E71;
 }
 
+button,
+.button {
+  width: 100%;
+  max-width: 136px;
+  padding: 0 16px;
+  background: none;
+  border: 0;
+  background-color: var(--primaryColor);
+  color: #fff;
+  height: 32px;
+  border-radius: 8px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+
+}
+
+button:hover,
+.button:hover {
+  background-color: #565E71;
+  color: #fff;
+
+}
+
+
+
+
 
 html {
   scroll-behavior: smooth !important;
@@ -63,6 +92,7 @@ ul {
 p {
   color: #283041 !important;
 }
+
 
 
 @media only screen and (max-width: 1600px) {

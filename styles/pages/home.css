@@ -1,14 +1,12 @@
-button {
-  width: 100%;
-  max-width: 136px;
-  padding: 0;
-  background: none;
-  border: 0;
-  background-color: var(--primaryColor);
-  color: #fff;
-  height: 32px;
-  border-radius: 8px;
+#sobre {
+  position: relative;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  top: -40vh;
 }
+
+
 
 textarea {
   resize: none !important;
@@ -117,7 +115,9 @@ textarea {
 /* SEÇAO BANNER */
 .banner {
   width: 100%;
-  min-height: calc(100vh - 89px);
+  min-height: 100vh;
+  padding-top: 89px;
+
   position: relative;
   z-index: 22;
 }
@@ -602,7 +602,7 @@ textarea {
 
   .banner {
     margin-bottom: 180px;
-    min-height: calc(100vh - 67px) !important;
+    padding-top: 67px;
   }
 
 

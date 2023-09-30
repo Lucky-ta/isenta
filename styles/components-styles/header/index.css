@@ -4,6 +4,9 @@ header {
     border-bottom: 1px solid #E3E8F6;
     position: relative;
     z-index: 44;
+    position: fixed;
+    top: 0;
+    background-color: #F8F8FF;
 }
 
 header .container {
@@ -122,6 +125,15 @@ footer p {
         margin-left: 30px;
     }
 }
+
+@media only screen and (max-width: 520px) {
+    header .container {
+        justify-content: space-between;
+    }
+}
+
+
+
 
 
 @media only screen and (max-width: 420px) {
